@@ -1,6 +1,7 @@
 package rc.entities.property;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.core.io.Resource;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,5 +39,5 @@ public class Property {
     @JsonProperty("precios")
     private List<Precio> precios;
     @JsonProperty("images")
-    private String images;
+    private List<Resource> images;
 }

@@ -10,6 +10,7 @@ import rc.services.PropertyService;
 import javax.validation.Valid;
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/property")
 public class PropertyController {

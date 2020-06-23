@@ -37,4 +37,6 @@ public class Property {
     private List<Amenities> amenities;
     @JsonProperty("precios")
     private List<Precio> precios;
+    @JsonProperty("images")
+    private String images;
 }

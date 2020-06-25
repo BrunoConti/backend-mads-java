@@ -24,10 +24,14 @@ public class Property {
     private String propertyId;
     @JsonProperty("id")
     private int id;
+    @JsonProperty("titulo")
+    private String titulo;
     @JsonProperty("habitaciones")
     private int habitaciones;
     @JsonProperty("fechaPublicacion")
     private Date fechaPublicacion;
+    @JsonProperty("ubicacion")
+    private String ubicacion;
     @JsonProperty("lat")
     private String lat;
     @JsonProperty("longitud")

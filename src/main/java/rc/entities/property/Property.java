@@ -39,5 +39,5 @@ public class Property {
     @JsonProperty("precios")
     private List<Precio> precios;
     @JsonProperty("images")
-    private List<Resource> images;
+    private List<String> images;
 }

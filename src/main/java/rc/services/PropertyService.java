@@ -25,6 +25,7 @@ public class PropertyService {
                         .usuario(property.getUsuario())
                         .amenities(property.getAmenities())
                         .precios(property.getPrecios())
+                        .images(property.getImages())
                         .build()
         );
     }

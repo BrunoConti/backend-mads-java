@@ -1,7 +1,6 @@
 package rc.entities.property;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.springframework.core.io.Resource;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,7 @@
 package rc.entities.property;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.springframework.core.io.Resource;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -23,10 +24,14 @@ public class Property {
     private String propertyId;
     @JsonProperty("id")
     private int id;
+    @JsonProperty("titulo")
+    private String titulo;
     @JsonProperty("habitaciones")
     private int habitaciones;
     @JsonProperty("fechaPublicacion")
     private Date fechaPublicacion;
+    @JsonProperty("ubicacion")
+    private String ubicacion;
     @JsonProperty("lat")
     private String lat;
     @JsonProperty("longitud")
@@ -37,4 +42,6 @@ public class Property {
     private List<Amenities> amenities;
     @JsonProperty("precios")
     private List<Precio> precios;
+    @JsonProperty("images")
+    private List<String> images;
 }

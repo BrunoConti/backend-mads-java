@@ -18,13 +18,16 @@ public class PropertyService {
         return propertyRepository.save(
                 Property.builder()
                         .id(property.getId())
+                        .titulo(property.getTitulo())
                         .habitaciones(property.getHabitaciones())
                         .fechaPublicacion(property.getFechaPublicacion())
                         .lat(property.getLat())
                         .longitud(property.getLongitud())
                         .usuario(property.getUsuario())
+                        .ubicacion(property.getUbicacion())
                         .amenities(property.getAmenities())
                         .precios(property.getPrecios())
+                        .images(property.getImages())
                         .build()
         );
     }
